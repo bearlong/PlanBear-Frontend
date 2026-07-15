@@ -1,2 +1,4 @@
-# planbear-frontend
-planbear-frontend
+# PlanBear-Frontend
+
+PlanBear-Frontend
+
