@@ -195,8 +195,8 @@ next-base/
 ## Author
 
 沈正龍 Bear Shen
-GitHub： https://github.com/bearlong
-Linkedin： https://www.linkedin.com/in/cheng-long-shen-1843082b7/
-email： a86774546@gmail.com
+- GitHub： https://github.com/bearlong
+- Linkedin： https://www.linkedin.com/in/cheng-long-shen-1843082b7/
+- email： a86774546@gmail.com
 
 
