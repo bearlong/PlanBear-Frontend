@@ -126,6 +126,8 @@ Anonymized Mock Data
 ## Screenshots
 
 > Placeholder：可於此放置系統畫面截圖，例如登入頁、角色選擇、RFQ 列表、儀器校驗列表與簽核操作畫面。
+> <img width="1391" height="852" alt="image" src="https://github.com/user-attachments/assets/8e42a8b1-831f-41b0-a300-56c422fa44f0" />
+
 
 ## Getting Started
 
