@@ -148,6 +148,12 @@ Anonymized Mock Data
 
 ## Getting Started
 
+### Prerequisites
+
+- Node.js 20+
+- Yarn 1.x
+- Plan Bear Backend running on port `3005`
+
 ### Installation
 
 ```bash
