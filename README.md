@@ -126,22 +126,22 @@ Anonymized Mock Data
 ## Screenshots
 
 ### Login
- <img width="1400" height="900" alt="image" src="https://github.com/user-attachments/assets/8e42a8b1-831f-41b0-a300-56c422fa44f0" />
+ <img width="1400" alt="image" src="https://github.com/user-attachments/assets/8e42a8b1-831f-41b0-a300-56c422fa44f0" />
 
 ### Role Selection
- <img width="1400" height="900" alt="image" src="https://github.com/user-attachments/assets/8a28370d-9aff-4ee7-a416-1bf48da8d074" />
+ <img width="1400" alt="image" src="https://github.com/user-attachments/assets/8a28370d-9aff-4ee7-a416-1bf48da8d074" />
 
 ### Site Selection
- <img width="1400" height="900" alt="image" src="https://github.com/user-attachments/assets/3fecb2ec-5c86-4498-acaf-d66902f111b9" />
+ <img width="1400" alt="image" src="https://github.com/user-attachments/assets/3fecb2ec-5c86-4498-acaf-d66902f111b9" />
 
 ### Dashboard
- <img width="1400" height="900" alt="image" src="https://github.com/user-attachments/assets/18fd1331-0b20-477b-a7f6-97653eb3cb93" />
+ <img width="1400" alt="image" src="https://github.com/user-attachments/assets/18fd1331-0b20-477b-a7f6-97653eb3cb93" />
 
 ### RFQ Application
- <img width="1400" height="900" alt="image" src="https://github.com/user-attachments/assets/bd85adfd-7eca-473c-901e-16fbb620c2cb" />
+ <img width="1400" alt="image" src="https://github.com/user-attachments/assets/bd85adfd-7eca-473c-901e-16fbb620c2cb" />
 
 ### Instrument Calibration List
- <img width="1400" height="900" alt="image" src="https://github.com/user-attachments/assets/375a98a0-1072-47e9-a21a-8dd8c5fdacc3" />
+ <img width="1400" alt="image" src="https://github.com/user-attachments/assets/375a98a0-1072-47e9-a21a-8dd8c5fdacc3" />
 
 
 
