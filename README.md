@@ -126,7 +126,25 @@ Anonymized Mock Data
 ## Screenshots
 
 > Placeholder：可於此放置系統畫面截圖，例如登入頁、角色選擇、RFQ 列表、儀器校驗列表與簽核操作畫面。
+> - 登入頁面
 > <img width="1391" height="852" alt="image" src="https://github.com/user-attachments/assets/8e42a8b1-831f-41b0-a300-56c422fa44f0" />
+
+- 權限角色選擇
+<img width="869" height="604" alt="image" src="https://github.com/user-attachments/assets/8a28370d-9aff-4ee7-a416-1bf48da8d074" />
+
+- 廠區選擇
+<img width="974" height="585" alt="image" src="https://github.com/user-attachments/assets/3fecb2ec-5c86-4498-acaf-d66902f111b9" />
+
+- 首頁
+<img width="2549" height="995" alt="image" src="https://github.com/user-attachments/assets/18fd1331-0b20-477b-a7f6-97653eb3cb93" />
+
+- RFQ 申請頁面
+<img width="2281" height="891" alt="image" src="https://github.com/user-attachments/assets/bd85adfd-7eca-473c-901e-16fbb620c2cb" />
+
+- 儀校設備列表
+- <img width="1545" height="816" alt="image" src="https://github.com/user-attachments/assets/375a98a0-1072-47e9-a21a-8dd8c5fdacc3" />
+
+
 
 
 ## Getting Started
