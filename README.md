@@ -231,8 +231,6 @@ next-base/
 
 - Full-stack Web Development
 - Enterprise Workflow System
-- Procurement Platform
-- Instrument Calibration Management
 - RESTful API Design
 
 ### 技術
