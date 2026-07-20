@@ -227,4 +227,22 @@ next-base/
 - Linkedin： https://www.linkedin.com/in/cheng-long-shen-1843082b7/
 - email： a86774546@gmail.com
 
+### 專長
+
+- Full-stack Web Development
+- Enterprise Workflow System
+- Procurement Platform
+- Instrument Calibration Management
+- RESTful API Design
+
+### 技術
+
+- JavaScript
+- React
+- Next.js
+- Express.js
+- Node.js
+- Supabase
+- Microsoft SQL Server
+
 
