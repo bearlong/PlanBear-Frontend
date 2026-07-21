@@ -1,0 +1,76 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+.ch15 {
+    width: 15ch;
+    font-size: 16px;
+}
+
+.hlColor {
+    background: #ffffc2;
+}
+
+.formColor {
+    background: #bafbff;
+}
+
+.formApplication {
+    width: 95%;
+    margin: 0 auto;
+    td {
+        text-align: center; /* 水平置中 */
+        vertical-align: middle; /* 垂直置中 */
+      }
+}
+
+.dateInput {
+    width: 10ch;
+}
+.ch7 {
+    width: 7ch;
+}
+
+.ch10 {
+    width: 10ch;
+}
+
+.ch20 {
+    width: 20ch;
+    font-size: 16px;
+}
+
+
+.factoryList {
+    --cui-popover-header-font-size: 1.6rem
+}
+
+.imgbox {
+    width: 20px;
+    height: 20px;
+}
+
+.approvalComments {
+    width: 98%;
+    overflow: auto;
+    margin: 0 auto;
+    .approvalTitle{
+        background-color: $gray-200;
+    }
+
+    .accordionHeader{
+        button {
+            font-size: 20px;
+        }
+    }
+}
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+  }

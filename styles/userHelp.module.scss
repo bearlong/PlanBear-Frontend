@@ -1,0 +1,137 @@
+.pageShell {
+  padding: 24px;
+}
+
+.contentShell {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pageCard {
+  border: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(18, 38, 63, 0.08);
+}
+
+.pageHeader {
+  padding: 24px 28px;
+  border-bottom: 1px solid #e9ecef;
+  background: linear-gradient(135deg, #f8fbff 0%, #eef4f9 100%);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6c757d;
+}
+
+.pageTitle {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2d3d;
+}
+
+.pageSubtitle {
+  margin: 12px 0 0;
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.pageBody {
+  padding: 28px;
+  background: #f7f9fc;
+}
+
+.moduleCard,
+.emptyCard {
+  border: 1px solid #e9ecef;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(31, 45, 61, 0.06);
+}
+
+.moduleHeader {
+  padding: 20px 24px;
+  border-bottom: 1px solid #e9ecef;
+  background: #fff;
+}
+
+.moduleTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f2d3d;
+}
+
+.moduleDescription {
+  margin-top: 6px;
+  font-size: 15px;
+  color: #6c757d;
+}
+
+.helpTable {
+  background: #fff;
+  table-layout: fixed;
+}
+
+.documentName {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2d3d;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.actionGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.nameColumn {
+  width: calc(100% - 240px);
+}
+
+.actionColumn {
+  width: 240px;
+  white-space: nowrap;
+}
+
+.actionButton {
+  min-width: 96px;
+}
+
+@media (max-width: 768px) {
+  .pageShell {
+    padding: 16px;
+  }
+
+  .pageHeader,
+  .pageBody,
+  .moduleHeader {
+    padding: 20px;
+  }
+
+  .pageTitle {
+    font-size: 26px;
+  }
+
+  .actionGroup {
+    gap: 8px;
+  }
+
+  .nameColumn,
+  .actionColumn {
+    width: auto;
+    white-space: normal;
+  }
+
+  .actionButton {
+    min-width: 88px;
+  }
+}

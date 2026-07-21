@@ -1,0 +1,74 @@
+.treeRow {
+  position: relative;
+  padding: 8px 12px;
+  padding-left: calc(var(--indent, 0px) + 12px);
+  transition: background-color 0.15s ease;
+  cursor: pointer;
+}
+
+.treeRow:hover {
+  background-color: rgba(13, 110, 253, 0.06);
+}
+
+.treeRow:active {
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+.hasIndent::after {
+  content: '';
+  position: absolute;
+  left: calc(var(--indent, 0px) + 6px);
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background-color: rgba(13, 110, 253, 0.15);
+}
+
+.selected {
+  background-color: rgba(13, 110, 253, 0.12);
+}
+
+.selected::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 3px;
+  border-radius: 2px;
+  background-color: #0d6efd;
+}
+
+.expandIcon {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background: transparent;
+  color: #6c757d;
+  padding: 0;
+}
+
+.expandIcon:disabled {
+  color: #c1c7cd;
+  cursor: default;
+}
+
+.nodeIcon {
+  min-width: 46px;
+  height: 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12px;
+  justify-content: center;
+  letter-spacing: 0.4px;
+}
+
+.deptIcon {
+  background: rgba(13, 110, 253, 0.12);
+  color: #0b5ed7;
+}
+
+.userIcon {
+  background: rgba(25, 135, 84, 0.12);
+  color: #198754;
+}

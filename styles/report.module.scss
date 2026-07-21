@@ -1,0 +1,91 @@
+.headerMeta {
+  min-width: 220px;
+  padding: 12px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(8px);
+}
+
+.headerMetaLabel {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.sectionCard {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
+.summaryCard {
+  border-radius: 18px;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+  background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
+}
+
+.summaryValue {
+  margin-bottom: 12px;
+  font-size: clamp(28px, 4vw, 36px);
+  font-weight: 700;
+  line-height: 1.1;
+  color: #1f3a5f;
+}
+
+.tableHeader {
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.iconButton {
+  padding: 0.25rem 0.45rem;
+  border-radius: 999px;
+}
+
+.chartPanel {
+  display: grid;
+  gap: 20px;
+}
+
+.chartCanvasShell {
+  position: relative;
+  min-height: 340px;
+  padding: 12px 8px 0;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f8fd 100%);
+}
+
+.chartSummaryList {
+  display: grid;
+  gap: 8px;
+}
+
+.chartSummaryItem {
+  font-weight: 600;
+  color: #1f3a5f;
+  word-break: break-word;
+}
+
+.chartLabel {
+  font-weight: 600;
+  color: #1f3a5f;
+}
+
+@media (max-width: 768px) {
+  .headerMeta {
+    width: 100%;
+  }
+
+  .tableHeader {
+    padding: 18px 20px;
+  }
+
+  .chartCanvasShell {
+    min-height: 280px;
+  }
+}

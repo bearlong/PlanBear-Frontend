@@ -1,0 +1,149 @@
+:root {
+  --primary: #0d5cab;
+  --background: #f0f2f5;
+}
+
+.bg {
+  background: var(--background);
+  min-height: 100vh;
+}
+
+.btn-ph-primary {
+  --cui-btn-color: #fff;
+  --cui-btn-bg: #0a4f91; /* 原色更深 */
+  --cui-btn-border-color: #0a4f91;
+
+  --cui-btn-hover-color: #fff;
+  --cui-btn-hover-bg: #0d5cab; /* hover 較淺 */
+  --cui-btn-hover-border-color: #0d5cab;
+
+  --cui-btn-focus-shadow-rgb: 13, 92, 171;
+
+  --cui-btn-active-color: #fff;
+  --cui-btn-active-bg: #0b549c;
+  --cui-btn-active-border-color: #0a4f91;
+  --cui-btn-active-shadow: inset 0 3px 5px rgba(8, 10, 12, 0.125);
+
+  --cui-btn-disabled-color: #fff;
+  --cui-btn-disabled-bg: #0a4f91;
+  --cui-btn-disabled-border-color: #0a4f91;
+
+  --cui-gradient: none;
+}
+
+.btn-ph-outline-primary {
+  --cui-btn-color: #0a4f91;
+  --cui-btn-border-color: #0a4f91;
+
+  --cui-btn-hover-color: #fff;
+  --cui-btn-hover-bg: #0a4f91;
+  --cui-btn-hover-border-color: #0a4f91;
+
+  --cui-btn-focus-shadow-rgb: 13, 92, 171;
+
+  --cui-btn-active-color: #fff;
+  --cui-btn-active-bg: #0a4f91;
+  --cui-btn-active-border-color: #094a87;
+  --cui-btn-active-shadow: inset 0 3px 5px rgba(8, 10, 12, 0.125);
+
+  --cui-btn-disabled-color: #0a4f91;
+  --cui-btn-disabled-bg: transparent;
+  --cui-btn-disabled-border-color: #0a4f91;
+
+  --cui-gradient: none;
+}
+
+.accordionHeader {
+  --cui-accordion-active-bg: #e8f1ff !important;
+
+  .accordion-button {
+    font-size: 1.5rem !important;
+    color: #555 !important;
+    font-weight: 600 !important;
+  }
+}
+
+.nav-group {
+  .nav-group-toggle {
+    --cui-sidebar-nav-link-hover-bg: #3a4a64;
+  }
+  .nav-link.nav-group-toggle::after {
+    background: #fff;
+  }
+  &:hover {
+    .nav-link.nav-group-toggle::after {
+      background: #fff;
+    }
+  }
+}
+
+.withoutSidebar {
+  margin-left: 0;
+  transition: margin 0.1s;
+}
+
+.withSidebar {
+  margin-left: 239px;
+  transition: margin 0.1s;
+}
+
+.login {
+  background: var(--background);
+  min-height: 100vh;
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-overlay {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media print {
+  .bg {
+    visibility: hidden; /* 隱藏所有內容 */
+  }
+
+  .print-area,
+  .print-area * {
+    visibility: visible !important; /* 顯示列印區域 */
+    overflow: visible !important;
+  }
+  .print-area {
+    position: absolute; /* 確保位置正確 */
+    top: 0;
+    left: 0;
+  }
+
+  @page {
+    size: A3 landscape; /* 設定 A4 橫向 */
+    margin: 10mm; /* 可調整邊距 */
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .withSidebar {
+    margin-left: 0px !important;
+    transition: margin 0.1s;
+  }
+
+  .withoutSidebar {
+    margin-left: 0;
+    transition: margin 0.1s;
+  }
+}

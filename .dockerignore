@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+dist
+coverage
+.git
+.vscode
+Dockerfile*
+docker-compose*
+*.log
+runtime-config.json

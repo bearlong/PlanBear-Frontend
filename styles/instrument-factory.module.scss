@@ -1,0 +1,342 @@
+.pageShell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 16px 72px;
+  background: radial-gradient(
+      circle at 18% 20%,
+      rgba(99, 123, 255, 0.12),
+      transparent 36%
+    ),
+    radial-gradient(circle at 82% 0, rgba(255, 199, 128, 0.14), transparent 38%),
+    linear-gradient(180deg, #f6f8fb 0%, #ecf1f8 100%);
+}
+
+.cardShell {
+  width: min(1400px, 100%);
+}
+
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 16px 46px rgba(15, 23, 42, 0.12);
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+}
+
+.cardHeader {
+  padding: 24px 28px 16px;
+  background: linear-gradient(135deg, #1d3557 0%, #2f6bff 65%, #5ca2ff 100%);
+  color: #fff;
+  border: none;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.8;
+  margin: 0 0 4px;
+}
+
+.title {
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 700;
+  margin: 0;
+}
+
+.subTitle {
+  margin: 6px 0 0;
+  opacity: 0.88;
+}
+
+.cardBody {
+  padding: 32px 36px;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.controlsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 8px 0 18px;
+  border-bottom: 1px solid #e5e8f0;
+}
+
+.searchInput {
+  position: relative;
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.searchField {
+  padding-left: 42px;
+  padding-right: 118px;
+  height: 48px;
+  box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.05);
+  border-radius: 12px;
+}
+
+.searchBtn {
+  position: absolute;
+  right: 4px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  padding: 0 14px;
+  white-space: nowrap;
+}
+
+.listArea {
+  margin-top: 18px;
+}
+
+.tableWrap {
+  border: 1px solid #e8ecf5;
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(17, 24, 39, 0.08);
+  background: #fff;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: 100%;
+  margin: 0;
+  min-width: 960px;
+}
+
+.table thead {
+  background: #f7f9fd;
+}
+
+.table th {
+  padding: 14px 16px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 14px 16px;
+  vertical-align: middle;
+}
+
+.tableRow {
+  transition: background 0.2s ease;
+}
+
+.tableRow:hover > td {
+  background: #eeeeee;
+}
+
+.selectableRow {
+  cursor: pointer;
+}
+
+.nameCell {
+  max-width: 320px;
+}
+
+.instrumentName {
+  font-size: 16px;
+  margin: 0;
+  color: #0f172a;
+  line-height: 1.35;
+}
+
+.metaValue {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.4;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.clamp2 {
+  word-break: break-all;
+  white-space: normal;
+}
+
+.cardActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.moreBtn {
+  padding: 0;
+  margin-top: 6px;
+}
+
+.expandRow {
+  background: #f8fbff;
+}
+
+.expandGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.expandLabel {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  margin: 0 0 4px;
+}
+
+.cardsList {
+  display: grid;
+  gap: 14px;
+}
+
+.factoryCard {
+  border: 1px solid #e8ecf5;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(17, 24, 39, 0.08);
+  background: #fff;
+}
+
+.cardHeaderRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.cardLabel {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  color: #7c8ba1;
+  margin: 0 0 4px;
+}
+
+.cardTitle {
+  margin: 0;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.35;
+  font-size: 18px;
+}
+
+.cardMetaRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.cardMetaLabel {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.cardMetaValue {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.cardMore {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cardMoreItem {
+  padding: 10px 12px;
+  border: 1px solid #eef1f7;
+  border-radius: 12px;
+  background: #f9fbff;
+}
+
+.tableWrap::-webkit-scrollbar {
+  height: 8px;
+}
+
+.tableWrap::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 999px;
+}
+
+.tableWrap::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+.tableWrap::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.emptyState {
+  border: 1px dashed #cbd5e1;
+  border-radius: 14px;
+  padding: 32px;
+  background: #f8fafc;
+  text-align: center;
+}
+
+@media (max-width: 1439px) {
+  .table {
+    min-width: 820px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .table {
+    min-width: 720px;
+  }
+}
+
+@media (max-width: 992px) {
+  .pageShell {
+    padding: 32px 12px 48px;
+  }
+
+  .cardBody {
+    padding: 22px;
+  }
+
+  .cardActions {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .controlsRow {
+    align-items: stretch;
+  }
+
+  .table {
+    min-width: 640px;
+  }
+}

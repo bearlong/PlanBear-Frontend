@@ -1,0 +1,276 @@
+.sectionCard {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  background: linear-gradient(180deg, #f8fbff 0%, #f2f6fc 100%);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.listCard {
+  border-color: rgba(31, 58, 95, 0.16);
+  box-shadow: 0 20px 42px rgba(15, 23, 42, 0.1);
+}
+
+.listHeader {
+  padding: 24px 28px;
+  background: linear-gradient(135deg, #163557 0%, #2258a8 55%, #4e8fff 100%);
+  border-bottom: none;
+}
+
+.listEyebrow {
+  margin: 0 0 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.listTitle {
+  margin: 0 0 8px;
+  font-size: clamp(24px, 3vw, 30px);
+  font-weight: 700;
+  color: #fff;
+}
+
+.listCountBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 104px;
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-weight: 700;
+}
+
+.heroBlock {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.heroIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #1f3a5f 0%, #2b6cff 100%);
+  color: #fff;
+  box-shadow: 0 14px 28px rgba(43, 108, 255, 0.22);
+}
+
+.summaryBox {
+  padding: 18px 20px;
+  border: 1px solid rgba(43, 108, 255, 0.14);
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ffffff 0%, #f3f8ff 100%);
+}
+
+.summaryValue {
+  font-size: clamp(28px, 4vw, 36px);
+  line-height: 1;
+  font-weight: 700;
+  color: #1f3a5f;
+  margin-top: 8px;
+}
+
+.numberColumn {
+  width: 84px;
+}
+
+.destinationTable thead th {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #4b5563;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: #f7faff;
+}
+
+.tableHead {
+  border-top: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.tableRow td {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.toolTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.tableBadge {
+  padding: 0.55rem 0.8rem;
+  font-weight: 700;
+}
+
+.openButton {
+  min-width: 108px;
+  justify-content: center;
+}
+
+.costInfoList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 14px;
+}
+
+.costInfoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.costInfoCell {
+  min-height: 110px;
+  padding: 14px 16px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.costInfoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 14px 16px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.costInfoLabel {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+.costInfoValue {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  text-align: right;
+  word-break: break-word;
+}
+
+.costPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.costStatusBox {
+  padding: 18px 20px;
+  border: 1px solid rgba(43, 108, 255, 0.14);
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ffffff 0%, #f3f8ff 100%);
+}
+
+.currentCostCard {
+  padding: 18px 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+}
+
+.costValueDisplay {
+  margin-top: 10px;
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1;
+  font-weight: 800;
+  color: #1f3a5f;
+}
+
+.propertyInfoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.propertyInfoCell {
+  padding: 14px 16px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.propertyFormBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fcfdff 0%, #f6f9ff 100%);
+}
+
+.historyMetaBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: #475569;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.historyTableWrap {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .sectionHeader {
+    padding: 18px 20px;
+  }
+
+  .listHeader {
+    align-items: flex-start;
+    gap: 12px;
+    padding: 20px;
+  }
+
+  .heroBlock {
+    align-items: flex-start;
+  }
+
+  .costInfoItem {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .costInfoValue {
+    text-align: left;
+  }
+
+  .costInfoGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .propertyInfoGrid {
+    grid-template-columns: 1fr;
+  }
+}

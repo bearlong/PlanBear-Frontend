@@ -1,0 +1,33 @@
+.loginForm {
+  box-shadow: 0 10px 6px -6px rgba(30, 30, 30, 0.1),
+    12px 0 8px -8px rgba(50, 50, 50, 0.1);
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+  width: 30%;
+  min-width: 520px;
+}
+
+.errorBox {
+  font-size: 12px;
+  height: 16px;
+}
+
+.passwordToggleIcon {
+  right: 10px;
+  top: 4px;
+  cursor: pointer;
+}
+
+.demoInfo {
+  color: #5f6f7f;
+  font-size: 13px;
+  line-height: 1.35;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .loginForm {
+    width: 80%;
+    min-width: 300px;
+  }
+}
