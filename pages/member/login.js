@@ -101,19 +101,21 @@ export default function Login() {
   }
 
   useEffect(() => {
-    if (!router.isReady) return // 確保 route 準備好再執行
-    logger.info('Router is ready', 'Login')
-    if (user) {
-      logger.info(`User detected, redirecting to '/'`, 'Login')
-      if (user.needsRoleSelection) {
-        router.push('/member/select-role')
-      } else if (!user.factory) {
-        router.push('/member/selectFactory')
-      } else {
-        router.push('/')
-      }
+    if (!router.isReady || !user) return
+
+    let target = '/'
+
+    if (user.needsRoleSelection) {
+      target = '/member/select-role'
+    } else if (!user.factory) {
+      target = '/member/selectFactory'
     }
-  }, [router, user])
+
+    if (router.asPath === target) return
+
+    logger.info(`User detected, redirecting to '${target}'`, 'Login')
+    router.replace(target)
+  }, [router.isReady, router.asPath, user?.needsRoleSelection, user?.factory])
   return (
     <>
       <main

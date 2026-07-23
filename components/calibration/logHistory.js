@@ -102,13 +102,23 @@ export default function LogHistory({
                     record.calibration_log_file.map((file, index) => (
                       <div key={file.id || index}>
                         <button
+                          type="button"
                           className="btn btn-link p"
-                          target="_blank"
                           onClick={() => {
-                            const url = api(
-                              `/data/files?filename=calibration/${file.file_url}`
-                            )
-                            window.open(url, '_blank')
+                            const filename = file.file_url
+
+                            const url =
+                              process.env.NEXT_PUBLIC_USE_MOCK === 'true'
+                                ? `/demo-files/calibration/${encodeURIComponent(
+                                    filename
+                                  )}`
+                                : api(
+                                    `/data/files?filename=${encodeURIComponent(
+                                      `calibration/${filename}`
+                                    )}`
+                                  )
+
+                            window.open(url, '_blank', 'noopener,noreferrer')
                           }}
                         >
                           {file.file_url.length > 20
