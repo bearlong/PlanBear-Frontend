@@ -299,11 +299,20 @@ export default function UpdateReport({
                   if (report.preview) {
                     handlePreview(report.preview)
                   } else {
-                    const filename = encodeURIComponent(report.file.name)
-                    const url = api(
-                      `/data/files?filename=calibration/${filename}`
-                    )
-                    window.open(url, '_blank')
+                    const filename = report.file_url
+
+                    const url =
+                      process.env.NEXT_PUBLIC_USE_MOCK === 'true'
+                        ? `/demo-files/calibration/${encodeURIComponent(
+                            filename
+                          )}`
+                        : api(
+                            `/data/files?filename=${encodeURIComponent(
+                              `calibration/${filename}`
+                            )}`
+                          )
+
+                    window.open(url, '_blank', 'noopener,noreferrer')
                   }
                 }}
               >

@@ -307,10 +307,24 @@ export default function InstrumentDetailPage() {
                                 className="btn btn-link p"
                                 target="_blank"
                                 onClick={() => {
-                                  const url = api(
-                                    `/data/files?filename=calibration/${file.file_url}`
+                                  const filename = file.file_url
+
+                                  const url =
+                                    process.env.NEXT_PUBLIC_USE_MOCK === 'true'
+                                      ? `/demo-files/calibration/${encodeURIComponent(
+                                          filename
+                                        )}`
+                                      : api(
+                                          `/data/files?filename=${encodeURIComponent(
+                                            `calibration/${filename}`
+                                          )}`
+                                        )
+
+                                  window.open(
+                                    url,
+                                    '_blank',
+                                    'noopener,noreferrer'
                                   )
-                                  window.open(url, '_blank')
                                 }}
                               >
                                 {file.file_url || `Report ${index + 1}`}
