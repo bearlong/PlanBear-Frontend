@@ -50,12 +50,6 @@ export default function SelectRole() {
     loadRoles()
   }, [loadRoles])
 
-  useEffect(() => {
-    if (user && !user.needsRoleSelection) {
-      router.replace(user.factory ? '/' : '/member/selectFactory')
-    }
-  }, [router, user])
-
   const handleRoleChange = (roleCode) => {
     setSelectedRoles((currentRoles) =>
       currentRoles.includes(roleCode)
