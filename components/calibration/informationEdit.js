@@ -496,11 +496,20 @@ export default function InformationEdit({
                           if (v.preview) {
                             handlePreview(v.preview)
                           } else {
-                            const filename = encodeURIComponent(v.file.name)
-                            const url = api(
-                              `/data/files?filename=calibration/${filename}`
-                            )
-                            window.open(url, '_blank')
+                            const filename = v.file.file_url
+
+                            const url =
+                              process.env.NEXT_PUBLIC_USE_MOCK === 'true'
+                                ? `/demo-files/calibration/${encodeURIComponent(
+                                    filename
+                                  )}`
+                                : api(
+                                    `/data/files?filename=${encodeURIComponent(
+                                      `calibration/${filename}`
+                                    )}`
+                                  )
+
+                            window.open(url, '_blank', 'noopener,noreferrer')
                           }
                         }}
                       >

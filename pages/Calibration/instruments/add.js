@@ -197,6 +197,7 @@ export default function InstrumentAddPage() {
         instru_sn: form.instru_sn.trim(),
         calibr_cycle: Number(form.calibr_cycle),
         calibr_class: form.calibr_class.trim(),
+        owner: form.owner.fullname.trim(),
         owner_username: form.owner.username.trim(),
         dept: form.owner.dept.trim(),
         first_price: Number(form.instrument_price),
