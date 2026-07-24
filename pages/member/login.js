@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '@/styles/login.module.scss'
@@ -100,21 +100,30 @@ export default function Login() {
     }
   }
 
+  const redirectingRef = useRef(false)
+
   useEffect(() => {
-    if (!router.isReady || !user) return
+    if (!router.isReady || !user || redirectingRef.current) return
 
-    let target = '/'
-
-    if (user.needsRoleSelection) {
-      target = '/member/select-role'
-    } else if (!user.factory) {
-      target = '/member/selectFactory'
-    }
+    const target = user.needsRoleSelection
+      ? '/member/select-role'
+      : !user.factory
+      ? '/member/selectFactory'
+      : '/'
 
     if (router.asPath === target) return
 
+    redirectingRef.current = true
+
     logger.info(`User detected, redirecting to '${target}'`, 'Login')
-    router.replace(target)
+
+    router.replace(target).catch((error) => {
+      if (!error?.cancelled) {
+        console.error('Login redirect failed:', error)
+      }
+
+      redirectingRef.current = false
+    })
   }, [router.isReady, router.asPath, user?.needsRoleSelection, user?.factory])
   return (
     <>
