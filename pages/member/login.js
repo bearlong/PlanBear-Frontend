@@ -117,13 +117,7 @@ export default function Login() {
 
     logger.info(`User detected, redirecting to '${target}'`, 'Login')
 
-    router.replace(target).catch((error) => {
-      if (!error?.cancelled) {
-        console.error('Login redirect failed:', error)
-      }
-
-      redirectingRef.current = false
-    })
+    window.location.replace(target)
   }, [router.isReady, router.asPath, user?.needsRoleSelection, user?.factory])
   return (
     <>
